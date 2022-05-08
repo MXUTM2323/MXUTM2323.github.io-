@@ -1,0 +1,328 @@
+:root{
+    --color_primario:#161515;
+    --color_secundario:#232222;
+    /*tipografia*/
+    --type:'Exo 2', sans-serif;
+    }
+
+
+* {
+    margin: 0em; 
+    padding: 0em; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+h1 {
+    font-family: var(--type);
+}
+
+a{color: darkgrey;}
+
+/*aqui empieza*/
+
+
+.encabezado {
+    display: flex;
+    width: 80%;
+    margin: 50px;
+    margin-top: 3em;
+    margin-bottom: 9em;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado .logo{
+    width: 20%;
+}
+
+.tru{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 80px;
+}
+
+.menu ul li {
+  
+    display: inline;
+    margin: .50em;
+    font-size: 2em;
+}
+.conocenos{
+  padding: 2em;
+  font-size: 2em;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(20, 67, 236);
+}
+
+
+/*marca*/
+
+.marca {
+    display: flex;
+    width: 80%;
+    margin: 50px;
+    margin-bottom: 1em;
+    gap: 50px;
+    align-items: flex-start;
+    font-size: 5em;
+}
+.marca .texto{
+    
+    display: flex;
+    flex-direction: column;
+}
+.marca .titulo{
+    font-size: 1em;
+    color:var(--color_primario);
+    margin-bottom: .5em; 
+}
+.marca .cuerpo{
+    font-size:  .5em;
+}
+.marca .foto {
+    width: 300%;
+    align-self: center;
+}
+
+
+/*alternativos*/
+
+
+.alternativo .alternativos{
+    width: 80%;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 7em;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.alternativos .titulo{
+    font-size: 2em;
+    color:var(--color_primario);
+    margin-bottom: 1.3em; 
+}
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: rgb(255, 255, 255);
+    justify-content: flex-start;
+}
+.bloques .c1{
+    
+    padding: 2em;
+}
+.bloques .c2{
+   
+    padding: 2em;
+}
+.bloques .c3{
+   padding: 2em;
+}
+.bloques .c4{
+    padding: 2em;
+}
+.bloques .c5{
+    padding: 2em;
+}
+.bloques .c6{
+    padding: 2em;
+}
+
+
+
+/*footer*/
+.footer{
+  background-color: var(--color_secundario);
+}
+.contenedor {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 5em 0em 5em 0em;
+}
+
+
+.contenedor .contenido{
+    
+    padding: 2em;
+}
+
+.iconos ul li{
+    display: inline;
+    margin-right: 2em;
+    font-size: 2em;
+}
+.contenido ul li{
+    list-style: none;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+}
+
+
+.contenedor .tema1{
+    color: rgb(255, 234, 234);
+    font-size: 25px;
+    justify-content: center;
+    font-size: 5em;
+    margin-bottom: .5em;  
+}
+
+.contenedor .tema2{
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.contenedor .tema3{
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.contenedor .tema4{
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.contenedor .tema5{
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .encabezado {
+        flex-direction: column;
+    }
+    .encabezado .logo{
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    
+    
+    .menu ul li {
+        display:block;
+        margin: 0em;
+        font-size: 1.2em;
+      
+    }
+    .conocenos{
+      padding: .5em;
+      font-size: 1.5em;
+      
+    }
+
+
+    .menu{
+        width: 100%;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .tru{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        }
+        
+
+    .marca {
+        flex-direction:column;
+        margin-bottom: 4em;
+        gap: 50px;
+    }
+    .marca .titulo{
+        font-size: 1.5em;
+        margin-bottom: .6em; 
+    }
+    .marca .foto {
+        width: 100%;
+    }
+    
+
+
+    
+
+    /*footer*/
+    .contenedor {
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .contenedor .contenido{
+        width: 90%;
+    }
+    
+    .contenedor .tema1{
+        font-size: 3em;
+        margin-right: 1em; 
+        margin-bottom: 1em;  
+    }
+   
+    .contenedor .contenidodo{
+        margin-bottom: 2.5em;
+    }
+
+    
+ }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
